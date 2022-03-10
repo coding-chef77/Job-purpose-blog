@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&family=Source+Sans+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Hotjar Tracking Code for https://hardcore-beaver-f1ff7e.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2844638, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html"
+          ><img src="img/logo.png" class="logo" alt="Job purpose blog logo"
+        /></a>
+      </div>
+    </header>
+    <hr />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="blog-posts.html">Blog</a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="current-page">Contact</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <div class="container">
+      <main>
+        <section>
+          <h1 class="main-heading">Contact</h1>
+          <p class="contact-text">
+            If you have anything you want to share with me or have any thought
+            on any of my subjects, please do not hesitate to get in tuch with
+            me.
+          </p>
+        </section>
+        <section>
+          <div class="contact-form-container">
+            <div id="sentMessage"></div>
+            <form action="#" method="post" id="contact-form">
+              <p class="contact">
+                Contact me today, I will reply as soon as I can!
+              </p>
+
+              <fieldset>
+                <input
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Your name"
+                />
+              </fieldset>
+              <div class="form-error" id="nameError">
+                Must have a value with a minimum length of 5 characters
+              </div>
+              <fieldset>
+                <input
+                  name="email"
+                  id="email"
+                  class="form__input"
+                  placeholder="Your email adress"
+                />
+              </fieldset>
+              <div class="form-error" id="emailError">
+                Please enter a velid Email
+              </div>
+              <fieldset>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  class="form__input"
+                  placeholder="Message Subject"
+                />
+              </fieldset>
+              <div class="form-error" id="subjectError">
+                Must have a value with a minimum length of 15 characters
+              </div>
+              <fieldset>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Type your Message here...."
+                  class="form__input"
+                  rows="5"
+                  cols="30"
+                ></textarea>
+              </fieldset>
+              <div class="form-error" id="messageError">
+                Must have a value with a minimum length of 25 characters
+              </div>
+
+              <button>Submit</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <hr />
+    <div class="container">
+      <footer>Copyright &copy; Job Purpose 2022</footer>
+    </div>
+    <hr />
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
